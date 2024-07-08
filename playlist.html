@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build an LMS Platform - Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .sidebar {
+            background-color: #f8fafc;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .course-section {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        .course-section.active {
+            background-color: #e5e7eb;
+        }
+
+        .video-container {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #f8fafc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex">
+
+    <div class="sidebar w-1/4 p-5">
+        <h1 class="mb-10">Build an LMS Platform</h1>
+        <p class="text-green-500 mb-5">0% Complete</p>
+        <div class="course-section">
+            <span>▶️</span> Intro & Demo
+        </div>
+        <div class="course-section active">
+            <span>⏸️</span> Environment Setup
+        </div>
+        <div class="course-section">
+            <span>▶️</span> Folders Setup
+        </div>
+        <div class="course-section">
+            <span>▶️</span> Authentication
+        </div>
+        <div class="course-section">
+            <span>▶️</span> Layout
+        </div>
+        <div class="course-section">
+            <span>▶️</span> Dynamic Layout
+        </div>
+        <div class="course-section">
+            <span>▶️</span> Course Creation UI
+        </div>
+        <div class="course-section">
+            <span>▶️</span> Prisma & DB Setup
+        </div>
+        <div class="course-section">
+            <span>▶️</span> Course Creation API
+        </div>
+    </div>
+
+    <div class="container w-3/4 p-5">
+        <div class="flex items-center justify-between mb-5">
+            <h1 class="text-xl font-bold">Environment Setup</h1>
+            <a href="#" class="text-blue-500">← Back to courses</a>
+        </div>
+
+        <div class="video-container mb-10">
+            <img src="https://via.placeholder.com/600x300" alt="Video" class="w-full rounded mb-3">
+        </div>
+
+        <div class="flex justify-between">
+            <div class="text-xl">Environment Setup</div>
+            <button class="bg-blue-500 text-white py-2 px-4 rounded">Complete and continue</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

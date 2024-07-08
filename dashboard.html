@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduflex - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .sidebar {
+            background-color: #f8fafc;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .course {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #f8fafc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .search-bar input {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .tag {
+            background-color: #e5e7eb;
+            border-radius: 8px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .tag.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex">
+
+    <div class="sidebar w-1/4 p-5">
+        <div class="flex items-center mb-10">
+            <img src="https://via.placeholder.com/50" alt="User" class="rounded-full mr-3">
+            <div>
+                <h1 class="text-xl font-bold">Eduflex</h1>
+                <p>Learning made easy</p>
+            </div>
+        </div>
+        <div class="mb-5">
+            <h2 class="text-lg font-bold mb-2">Browse</h2>
+            <ul>
+                <li class="mb-2">Workshops</li>
+                <li class="mb-2">Leaderboard</li>
+                <li class="mb-2">Newsletter</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="text-lg font-bold mb-2">Upgrade to Pro</h2>
+            <p class="mb-5">Unlock weekly workshops, access to all paid content, and more.</p>
+            <button class="bg-blue-500 text-white py-2 px-4 rounded">Upgrade</button>
+        </div>
+        <div class="footer mt-20">
+            <p>© 2024 ENRA d.o.o. | Eduflex</p>
+        </div>
+    </div>
+
+    <div class="container w-3/4 p-5">
+        <div class="flex items-center justify-between mb-10">
+            <h1 class="text-xl font-bold">Learning made easy - Eduflex</h1>
+            <div class="search-bar w-1/2">
+                <input type="text" placeholder="Search for a course">
+            </div>
+        </div>
+
+        <div class="flex mb-5">
+            <span class="tag active">All</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">React.js</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Prisma</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Supabase</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-5">
+            <div class="course">
+                <img src="https://via.placeholder.com/300x150" alt="Course Image" class="rounded mb-3">
+                <h2 class="text-xl font-bold">Build a Canva clone</h2>
+                <p>25 Chapters</p>
+                <a href="#" class="text-blue-500">View Course</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/300x150" alt="Course Image" class="rounded mb-3">
+                <h2 class="text-xl font-bold">Build a Finance Platform</h2>
+                <p>31 Chapters</p>
+                <a href="#" class="text-blue-500">View Course</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/300x150" alt="Course Image" class="rounded mb-3">
+                <h2 class="text-xl font-bold">Duolingo Clone</h2>
+                <p>29 Chapters</p>
+                <a href="#" class="text-blue-500">View Course</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/300x150" alt="Course Image" class="rounded mb-3">
+                <h2 class="text-xl font-bold">Prisma & Free Database</h2>
+                <p>4 Chapters</p>
+                <a href="#" class="text-blue-500">View Course</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/300x150" alt="Course Image" class="rounded mb-3">
+                <h2 class="text-xl font-bold">Build a Real-Time Miro</h2>
+                <p>40 Chapters</p>
+                <a href="https://www.codewithantonio.com/projects/miro-clone" class="text-blue-500">View Course</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/300x150" alt="Course Image" class="rounded mb-3">
+                <h2 class="text-xl font-bold">Next Auth v5 - Advanced</h2>
+                <p>23 Chapters</p>
+                <a href="#" class="text-blue-500">View Course</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
